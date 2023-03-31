@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>html y css</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="https://i.pinimg.com/564x/ff/02/23/ff022372b446ca8f2d56ab432ec8a07f.jpg"> 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/veterinariauwu/css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl603oVMWSktQOp6b7In1Zl3/jr59b6EGGoI1aFKw7cmDA6j6gD" crossorigin="anonymous">
+    
+    
+      <script>
+        function comprobarclave(){
+          clave1 = document.f1.clave1.value
+          clave2 = document.f1.clave2.value
+    
+          if (clave1 == "admin" && clave2 == "conejo"){
+            alert("los datos coinciden...\n bienvenido");
+            var href = "datos.html";;
+            window.location=href;
+          }
+    
+          else{
+            alert("error...\n intentelo nuevamente.");
+            var href = "principal.html";
+            window.location=href;
+    
+          };
+        }
+      </script>
+      <link rel="stylesheet" href="/kyoresu/riro/css/bootstrap.min.css" crossorigin="anonymous">
+    </head>
+    <body>
+      
+      
+      <h1 id="tipos-titanes">presionar botor de ingresar</h1>
+    
+      <br>
+      <form action="" name="f1">
+        <center>
+          <hr color = "LightPink">
+    
+    <h2 id="tipos-titanes" >USUARIO: <input type="password" name="clave1" size="20"></h2>
+    <br><br>
+    <h2 id="tipos-titanes">CONTRASEÑA: <input type="password" name="clave2" size="20"></h2>
+    <br><br>
+    <div ><input type="button" class="btn btn-primary" value="ingresar" class="d-grid gap-2 d-md-block" onclick="comprobarclave()"></div>
+    
+    <br>
+    </center>
+    <hr color ="LightPink">	
+      <CENTER><a title="home" href="datos.html"><img src="https://pbs.twimg.com/media/FmiuNGlWYAYB6A9?format=jpg&name=small" alt="home" /></a></CENTER>
+      <hr color="LightPink">
+      <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+              <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"><a href="datos.html" style="color:#FF69B4;">home</a> &nbsp;&nbsp;</button>
+            </li>
+            <form action="/enviar-respuesta">
+              <!--Botones de Radio-->
+              <!--atrivuto value-->
+              
+              
+              <!--Texto y Boton Enviar-->
+              <section class="form-register">
+                <h4>Formulario Registro</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese Nombre sino no esta registrado po" required>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese Apellido" required>
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese Correo o Telefono" required>
+                <input class="controls" type="text" name="numero" id="numero" placeholder="Ingrese Edad" required>
+                <input class="controls" type="text" name="numero" id="numero" placeholder="Ingrese número de DPI" required>
+                
+                <label for="terminos"><input id="terminos" type="checkbox" value="Terminos" name="terminos" required> Estoy de acuerdo con Terminos y Condiciones</label> <br><br>
+      
+                <input class="botons" type="submit" value="Registrar">
+                <input class="botons" type="reset" value="Restablecer">
+                <p><a href="#">¿Ya has enviado tus datos antes?</a></p>
+              </section>
+      
+            </form>
+           
+    </body>
+    </html>
